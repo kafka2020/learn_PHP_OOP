@@ -33,14 +33,22 @@ function offerCase(IGadget $product)
 $book = new BookProduct('Три мушкетера', 20, 1000);
 $notebook = new NotebookProduct('Dell', 1000, 'Intel');
 
-//offerCase($notebook);
-//$book->test = 'Hello';
-//$book->test2 = 'Hello';
-//echo $book->test;
-//echo $book->nobody;
-//echo $book->name;
-debug($book);
-//debug($notebook);
 
-//echo  $book->getProduct();
-//echo $book;
+//$a = new \app\A();
+$a1 = \app\A::getInstance();
+$a2 = \app\A::getInstance();
+
+//$a = new \app\A();
+//$b = new \app\A();
+
+var_dump($a1);
+echo '<br>';
+var_dump($a2);
+echo '<br>';
+
+$b1 = \app\B::getInstance();
+$b2 = \app\B::getInstance();
+
+var_dump($b1);
+echo '<br>';
+var_dump($b2);
